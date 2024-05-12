@@ -1,0 +1,148 @@
+
+
+:root{
+    --clr-accent-500: hsl(180, 66%, 49%);
+    --clr-footer: hsl(266, 10%, 14%);
+    --clr-menu-nav-btn: rgb(159,157,168);
+    --clr-primary-400: hsl(280, 14%, 22%);
+    --clr-primary-500:  hsl(257, 27%, 26%);
+    --clr-primary-100:hsl(0, 0%, 0%);
+    --clr-neutral-100:hsl(0, 0%, 100%);
+    --DisplayGrid: grid;
+    --DisplayFlex: flex;
+   
+    --fs-100:1rem;
+    --fs-120:1.2rem;
+    --fs-200: 1.5rem;
+    --fs-300:2rem;
+    --fs-400:2.5rem;
+    --fs-500:3rem;
+
+    --fw-100: 100;
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fw-900: 900;
+
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem;
+   
+}
+/*desktop*/
+.nav-header{
+    display: var(--DisplayFlex);
+    align-items: center;
+}
+
+.nav-toggle{
+    display: none;
+}
+/* */
+/*menu desktop*/
+nav > ul {
+    display: var(--DisplayFlex);
+    align-items:center;
+    gap:1rem;
+}
+
+.logo{
+    max-width: 120px;
+    margin-right: 1rem;
+    
+}
+/* menu-btn*/
+.sign-up{
+    border:none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: var(--clr-accent-500);
+    border-radius:2rem;
+    color:white !important;
+}
+ul a:hover{
+    opacity:1;
+}
+ul a{
+    opacity:0.5;
+}
+
+/*custom btn*/
+.btn{
+    border:none;
+    cursor: pointer;
+    width:auto;
+    background-color: var(--clr-accent-500);
+    border-radius:2rem;
+    color:white;
+}
+.btn:active{
+    opacity:0.5;
+}
+
+/* menu styles */
+ul a, ul .sign-up {
+    color: var(--clr-primary-100);
+    font-weight: var(--fw-700);
+    font-size: var(--fs-120);
+}
+/* menu_line */
+.line{
+    
+}
+
+@media(max-width:375px){
+    /* forming the shape of menu */
+nav > ul {
+    display: var(--DisplayFlex);
+    flex-direction: column;
+    align-items: center;
+    background:var(--clr-primary-500);
+    padding:2.8rem;
+    gap:1rem;
+    border-radius:0.5rem;
+  
+}
+
+/* menu-btn*/
+.sign-up{
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    padding: 0.5rem 5rem;
+    background-color: var(--clr-accent-500);
+    border-radius:2rem;
+    font-size: 1rem !important;
+}
+/* menu styles */
+ul a, ul .sign-up {
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-700);
+    font-size: var(--fs-120);
+}
+/* menu_line */
+.line{
+    padding:0.03rem 7rem;
+    background-color: var(--clr-neutral-100);
+    opacity:0.1;
+    margin-top: 1rem;
+}
+/*delete this later tha is just for appearance */
+.logo{
+    display: none;
+}
+
+}
+
